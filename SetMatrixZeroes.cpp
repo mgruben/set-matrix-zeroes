@@ -13,9 +13,11 @@ public:
                     for (int k = 0; k < matrix.size(); k++) {
                         matrix[k][j] = 0;
                     }
+                    for (int k = 0; k < matrix[0].size(); k++) {
+                        matrix[i][k] = 0;
+                    }
                 }
             }
-            cout << endl;
         }
     }
 };
@@ -41,9 +43,10 @@ string toString(vector<vector<int>> v) {
 }
 
 int main() {
-    vector<vector<int>> m = {{1,2},{6,8},{9,1},{6,8},{6,8},};
+    vector<vector<int>> m = {{1,2},{6,8},{0,1},{6,8},{6,8},};
     cout << toString(m) << endl;
     Solution sol;
     sol.setZeroes(m);
+    cout << toString(m) << endl;
     return 0;
 }
