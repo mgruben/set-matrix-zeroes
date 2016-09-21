@@ -142,7 +142,7 @@ string toString(vector<vector<int>> v) {
 }
 
 int main() {
-    vector<vector<int>> m = {{1,2},{6,8},{0,1},{6,8},{6,8},};
+    vector<vector<int>> m = {{1,2},{6,8},{0,1},{6,8},{6,8}};
     cout << toString(m) << endl;
     Solution sol;
     sol.setZeroes(m);
