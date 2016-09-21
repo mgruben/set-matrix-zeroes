@@ -1,5 +1,5 @@
 # pascals-triangle 
-Given a matrix, zero every row and column containing a zero, without using extra space
+Given a matrix, zero every row and column containing a zero entry, without using extra space.
 
 For example:
 ```
